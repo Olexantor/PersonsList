@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F39852025DD9A2500FAD3DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39851F25DD9A2500FAD3DE /* DetailViewController.swift */; };
 		1F524F4925DC4B9600572BA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F524F4825DC4B9600572BA0 /* AppDelegate.swift */; };
 		1F524F4B25DC4B9600572BA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F524F4A25DC4B9600572BA0 /* SceneDelegate.swift */; };
 		1F524F5025DC4B9600572BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F524F4E25DC4B9600572BA0 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F39851F25DD9A2500FAD3DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1F524F4525DC4B9600572BA0 /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F524F4825DC4B9600572BA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F524F4A25DC4B9600572BA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F39852225DDAA8000FAD3DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F5E25DC4F4A00572BA0 /* PersonsViewController.swift */,
+				1F39851F25DD9A2500FAD3DE /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1F39852425DDAAA300FAD3DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F6125DC5B7100572BA0 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F39852625DDAABA00FAD3DE /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F6425DC5D3600572BA0 /* DataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		1F39852825DDAAC900FAD3DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F5125DC4B9A00572BA0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F39852925DDAAF600FAD3DE /* Stroryboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F4E25DC4B9600572BA0 /* Main.storyboard */,
+				1F524F5325DC4B9A00572BA0 /* LaunchScreen.storyboard */,
+			);
+			path = Stroryboards;
+			sourceTree = "<group>";
+		};
+		1F39852A25DDAB1900FAD3DE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1F524F4825DC4B9600572BA0 /* AppDelegate.swift */,
+				1F524F4A25DC4B9600572BA0 /* SceneDelegate.swift */,
+				1F524F5625DC4B9A00572BA0 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		1F524F3C25DC4B9600572BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +114,12 @@
 		1F524F4725DC4B9600572BA0 /* PersonsList */ = {
 			isa = PBXGroup;
 			children = (
-				1F524F4825DC4B9600572BA0 /* AppDelegate.swift */,
-				1F524F4A25DC4B9600572BA0 /* SceneDelegate.swift */,
-				1F524F4E25DC4B9600572BA0 /* Main.storyboard */,
-				1F524F5E25DC4F4A00572BA0 /* PersonsViewController.swift */,
-				1F524F6125DC5B7100572BA0 /* Person.swift */,
-				1F524F6425DC5D3600572BA0 /* DataManager.swift */,
-				1F524F5125DC4B9A00572BA0 /* Assets.xcassets */,
-				1F524F5325DC4B9A00572BA0 /* LaunchScreen.storyboard */,
-				1F524F5625DC4B9A00572BA0 /* Info.plist */,
+				1F39852225DDAA8000FAD3DE /* ViewControllers */,
+				1F39852425DDAAA300FAD3DE /* Models */,
+				1F39852625DDAABA00FAD3DE /* DataManagers */,
+				1F39852925DDAAF600FAD3DE /* Stroryboards */,
+				1F39852A25DDAB1900FAD3DE /* SupportingFiles */,
+				1F39852825DDAAC900FAD3DE /* Resources */,
 			);
 			path = PersonsList;
 			sourceTree = "<group>";
@@ -146,6 +197,7 @@
 				1F524F5F25DC4F4A00572BA0 /* PersonsViewController.swift in Sources */,
 				1F524F6525DC5D3600572BA0 /* DataManager.swift in Sources */,
 				1F524F4925DC4B9600572BA0 /* AppDelegate.swift in Sources */,
+				1F39852025DD9A2500FAD3DE /* DetailViewController.swift in Sources */,
 				1F524F6225DC5B7100572BA0 /* Person.swift in Sources */,
 				1F524F4B25DC4B9600572BA0 /* SceneDelegate.swift in Sources */,
 			);

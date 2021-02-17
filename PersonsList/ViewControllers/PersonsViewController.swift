@@ -9,20 +9,14 @@ import UIKit
 
 class PersonsViewController: UITableViewController {
     
-    var persons = Person.getPersonInfo()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    //MARK: Private Properties
+    private var persons = Person.getPersonInfo()
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         
@@ -35,20 +29,12 @@ class PersonsViewController: UITableViewController {
 
         return cell
     }
-
-
-
     
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    
-
     // MARK: - Navigation
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let person = persons[indexPath.row]
+        detailVC.personDetail = person
     }
-
 }
